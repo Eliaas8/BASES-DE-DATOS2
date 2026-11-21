@@ -98,9 +98,7 @@ def eliminar_proveedor(id):
     sql = "DELETE FROM proveedores WHERE id=%s"
 
     cursor.execute(sql, (id,))
-
     conexion.commit()
-
     conexion.close()
 
     return jsonify({"mensaje": "Proveedor eliminado correctamente"})
