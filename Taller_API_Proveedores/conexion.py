@@ -12,9 +12,7 @@ conexion = pymysql.connect(
 print("Conexion exitosa")
 
 cursor = conexion.cursor()
-
 cursor.execute("SELECT * FROM proveedores")
-
 proveedores = cursor.fetchall()
 
 for proveedor in proveedores:
